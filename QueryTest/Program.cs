@@ -7,7 +7,6 @@ class Program
     {
         var services = new ServiceCollection();
         ConfigureServices(services);
-        services.AddDaprClient();
 
         var builder = services.BuildServiceProvider();
         var queryTest = builder.GetRequiredService<QueryTest>();
